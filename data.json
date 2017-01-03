@@ -1,0 +1,21 @@
+{
+    "title": "Menu title",
+    "menu": [
+        {
+            "name": "Home",
+            "icon": "./icons/home.png"
+        }, 
+        {
+            "name": "Recipes",
+            "icon": ""
+        }, 
+        {
+            "name": "Links",
+            "icon": ""
+        }, 
+        {
+            "name": "Contact",
+            "icon": ""
+        }
+    ]
+}

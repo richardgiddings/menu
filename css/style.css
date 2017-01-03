@@ -1,0 +1,35 @@
+.nav-img {
+  padding: 0px 6px 0px 6px;
+}
+
+.nav-text {
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+section {
+  margin: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4B698B;
+}
+
+nav li {
+  float: left;
+  cursor: pointer;
+}
+
+nav li:hover:not(.active) {
+  background-color: #2B4B6F;
+}
+
+.active {
+  background-color: #133253;
+}
