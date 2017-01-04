@@ -2,9 +2,15 @@
   "name": "menu",
   "version": "1.0.0",
   "description": "A menu made using React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardgiddings/menu.git"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify ./index.js -t babelify -o bundle.js",
+    "start": "watchify ./index.js -v -t babelify -o bundle.js",
+    "test": "jest"
   },
   "author": "Richard Giddings",
   "license": "ISC",
@@ -17,8 +23,9 @@
     "react-dom": "^15.0.2",
     "watchify": "^3.7.0"
   },
-  "scripts": {
-    "build": "browserify ./index.js -t babelify -o bundle.js",
-    "start": "watchify ./index.js -v -t babelify -o bundle.js"
+  "devDependencies": {
+    "babel-jest": "^18.0.0",
+    "jest": "^18.1.0",
+    "react-test-renderer": "^15.4.1"
   }
 }
